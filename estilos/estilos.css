@@ -3,13 +3,15 @@
     @media(min-width: 992px){
         #header #header-int{
             /*cor do background*/
-            background-color: #034F0A;
+            background: rgb(3,116,14);
+            background: linear-gradient(0deg, rgba(3,116,14,1) 10%, rgba(3,79,10,1) 12%);
+            height: 130px;
         }
         
         #header img{
             /* editando a localização da logo da agro */
             margin-top: -15%;
-            margin-bottom: -9.5%;
+            margin-bottom: -7.5%;
             margin-left: 20%;
             
         } 
@@ -18,14 +20,15 @@
     @media(max-width: 991px){
         #header #header-int{
             /*cor do background*/
-            background-color: #034F0A;
-            height: 10%;
+            background: rgb(3,116,14);
+            background: linear-gradient(0deg, rgba(3,116,14,1) 10%, rgba(3,79,10,1) 12%);
+            height: 20%;
         }
         
         #header img{
             /* editando a localização da logo da agro */
             margin-top: -15%;
-            margin-bottom: -9.5%;
+            margin-bottom: -7.5%;
             margin-left: 20%;
             
         } 
@@ -37,10 +40,13 @@
 
         #header #navbar #nav{
         /* definindo a cor e o tipo de fonte do texto dos links da navbar */
-        color: #fff;
-        font-family: arial;
+            color: #fff;
+            font-family: arial;
+            
         }  
         
+        
+
         #header #navbar a h1{
             /* definindo o tamanho do texto dos links da navbar */
             font-size: 1.9em;
@@ -51,7 +57,7 @@
             margin-right: 8%;
             margin-left: 9%;
             border-top: 2px solid #034F0A;
-            border-bottom: 2px solid #034F0A;
+            border-bottom: 2px solid ##034F0A;
             border-right: 2px solid #ffffff;
             border-left: 2px solid #ffffff;
         }
@@ -81,6 +87,12 @@
             /* colocando o brilhinho quando passa o mouse em cima */
             color: #FFF086;
         } 
+        
+        #pag_up{
+            /*dando um espaço do header para a pagina*/
+            margin-bottom: 8%;
+            
+        }
 
     }
 
@@ -90,7 +102,10 @@
             /* definindo a cor e o tipo de fonte do texto dos links da navbar */
             color: #222;
             font-family: arial;
+           
         }  
+
+       
         
         #header #navbar a h1{
             /* definindo o tamanho do texto dos links da navbar */
@@ -108,7 +123,7 @@
             /*editando o visual do butão de login*/
             font-size: 1.2em;
             font-family: arial;
-            margin-top: 10%;
+            margin-top: 20%;
         }
 
         #header #login #link {
@@ -118,7 +133,103 @@
             
         }
 
+        #pag_up{
+            margin-bottom: 8%;
+        }
     }
 
 
+    
 
+
+
+/*footer config*/
+#footer {
+    background: rgb(3,79,10);
+    background: linear-gradient(0deg, rgba(3,79,10,1) 88%, rgba(3,116,14,1) 90%);
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+#footer #cont{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+
+#footer #titulo {
+    font-size: 1.4em;
+    color: white;
+    margin-bottom: 10%;
+}
+
+#footer #logo img{
+    margin-top: -15px;
+}
+ 
+#footer #perguntas, #footer #logo, #footer #linksfora{
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+/*editando links para seção de ajuda*/
+
+
+#footer #perguntas #links {
+    color: white;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#footer #perguntas #links:hover {
+    color: #FFF086;
+}
+
+
+/*editando os links externos*/
+
+    #linksfora #linkfoo {
+        color: white;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;   
+        margin-left: 20px;
+    }
+
+    #linksfora #linkfoo:hover,  #footer #linksfora #Emailbotum:hover {
+        /* colocando para mudar a cor dos links quando passar em cima*/
+        color: #FFF086; 
+    }
+
+    #footer #linksfora #Emailbotum {
+        /* editano o botão de emqail dos links de contato*/
+        font-family: Arial, Helvetica, sans-serif;
+        background: none;
+        border: none; 
+        text-decoration: none; 
+        font-size: 1em; 
+        color: white;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+
+/* adicionando cada um dos icones de outras paginas no footer */
+
+    #footer #linksfora #linkfoo #facefoo{
+        list-style-image: url('../multimidia/icones/facebook.png');
+
+    }
+
+    #footer #linksfora #linkfoo #instfoo{
+        list-style-image: url('../multimidia/icones/instagram.png');
+    }
+
+    #footer #linksfora #linkfoo #whatfoo{
+        list-style-image: url('../multimidia/icones/whatsapp.png');
+    }
+
+    #footer #linksfora #Emailfoo {
+        list-style-image: url('../multimidia/icones/gmail.png');
+        
+    }
